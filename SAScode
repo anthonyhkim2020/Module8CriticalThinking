@@ -17,6 +17,6 @@ ods graphics / imagemap=on;
 
 proc reg data=WORK.IMPORT alpha=0.05 plots(only maxpoints=none)=(diagnostics 
 		residuals observedbypredicted);
-	model Weekly_Sales=Fuel_Price CPI Unemployment /;
+	model Weekly_Sales=Fuel_Price CPI Unemployment /clb;
 	run;
 quit;
